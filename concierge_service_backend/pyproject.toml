@@ -1,0 +1,29 @@
+[project]
+name = "concierge_service_backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Shubham",email = "shubhammahawar.26@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "pydantic (>=2.11.5,<3.0.0)",
+    "langgraph (>=0.4.7,<0.5.0)",
+    "langchain (>=0.3.25,<0.4.0)",
+    "langchain-aws (>=0.2.23,<0.3.0)",
+    "langchain-community (>=0.3.24,<0.4.0)",
+    "mypy-boto3-bedrock-runtime (>=1.38.4,<2.0.0)",
+    "tavily-python (>=0.7.2,<0.8.0)",
+    "langchain-fireworks (>=0.3.0,<0.4.0)",
+    "langchain-together (>=0.3.0,<0.4.0)",
+    "duckduckgo-search (>=8.0.2,<9.0.0)",
+    "langchain-groq (>=0.3.2,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

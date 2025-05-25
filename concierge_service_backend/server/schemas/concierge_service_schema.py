@@ -28,7 +28,7 @@ class DiningEntitieSchema(BaseModel):
         if model.dining_date and model.dining_date < today:
             raise ValueError("Dining date must be today or in the future")
 
-        if model.dining_time and model.dining_time < now:
+        if model.dining_date == today and model.dining_time and model.dining_time < now:
             raise ValueError("Dining time must be current or later")
 
         return model
@@ -78,14 +78,8 @@ class GiftingEntitiesSchema(BaseModel):
         today = dt_date.today()
         now = datetime.now().time()
 
-        if model.travel_date and model.travel_date < today:
-            raise ValueError("Travel date must be today or in the future")
-
-        if model.return_date and model.travel_date < today:
-            raise ValueError("Travel date must be today or in the future")
-
-        if model.travel_date and model.return_date and model.travel_date <= model.return_date :
-            raise ValueError("Travel date must be today or in the future")
+        if model.delivery_date and model.delivery_date < today:
+            raise ValueError("Delivery date must be today or in the future")
 
         return model
 
@@ -94,7 +88,7 @@ class CabBookingEntitiesSchema(BaseModel):
 
     pickup_location: Optional[str] = Field(None,description="Location where the cab should pick up")
     dropoff_location: Optional[str] = Field(None,description="Location where the cab should drop off")
-    pickup_date: Optional[dt_time] = Field(None,description="Desired date of pickup")
+    pickup_date: Optional[dt_date] = Field(None,description="Desired date of pickup")
     pickup_time: Optional[dt_time] = Field(None,description="Desired time of pickup")
     number_of_passengers: Optional[int] = Field(None,description="Number of passengers for the ride")
     cab_type: Optional[concierge_service_enum.CabTypeEnum] = Field(None,description="Type of cab preferred (e.g. sedan, SUV)")
@@ -108,7 +102,7 @@ class CabBookingEntitiesSchema(BaseModel):
         if model.pickup_date and model.pickup_date < today:
             raise ValueError("Pickup date must be today or in the future")
 
-        if model.pickup_time and model.pickup_time < now:
+        if model.pickup_date == today and model.pickup_time and model.pickup_time < now:
             raise ValueError("Travel date must be today or in the future")
 
         return model

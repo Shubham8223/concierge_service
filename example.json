@@ -1,0 +1,244 @@
+{
+  "input1": "Book a table for two at an Italian restaurant tonight at 8 pm, gluten-free menu required.",
+  "output1": {
+    "intent_category": "dining",
+    "confidence_score": 0.95,
+    "entities": {
+      "dining_date": "2025-05-25",
+      "cuisine": "gluten_free",
+      "party_size": 2
+    },
+    "follow_up_questions": [
+      {
+        "question": "What location or city are you looking for a restaurant in?",
+        "field": "location",
+        "required": true
+      },
+      {
+        "question": "What time would you like to dine tonight?",
+        "field": "dining_time",
+        "required": true
+      },
+      {
+        "question": "Do you have a specific budget in mind for your dinner?",
+        "field": "budget",
+        "required": false
+      }
+    ]
+  },
+
+  "input2": "Book a flight to New York next Monday.",
+  "output2": {
+    "intent_category": "travel",
+    "confidence_score": 0.95,
+    "entities": {
+      "destination_location": "New York",
+      "travel_date": "2025-05-26",
+      "mode_of_transport": "flight"
+    },
+    "follow_up_questions": [
+      {
+        "question": "Where will you be departing from?",
+        "field": "source_location",
+        "required": true
+      },
+      {
+        "question": "How many people will be traveling?",
+        "field": "number_of_travelers",
+        "required": true
+      },
+      {
+        "question": "Do you plan to return? If so, when?",
+        "field": "return_date",
+        "required": false
+      },
+      {
+        "question": "What is your budget for this trip?",
+        "field": "budget",
+        "required": false
+      }
+    ]
+  },
+
+  "input3": "I need a cab pickup from my home at 7 pm tommorow.",
+  "output3": {
+    "intent_category": "cab booking",
+    "confidence_score": 0.95,
+    "entities": {
+      "pickup_location": "home",
+      "pickup_date": "2025-05-26",
+      "pickup_time": "19:00:00"
+    },
+    "follow_up_questions": [
+      {
+        "question": "Where would you like to be dropped off?",
+        "field": "dropoff_location",
+        "required": true
+      },
+      {
+        "question": "How many passengers will be traveling?",
+        "field": "number_of_passengers",
+        "required": true
+      },
+      {
+        "question": "What type of cab would you prefer?",
+        "field": "cab_type",
+        "options": [
+          "standard",
+          "suv",
+          "luxury",
+          "mini",
+          "sedan",
+          "electric",
+          "shared"
+        ],
+        "required": false
+      }
+    ]
+  },
+
+  "input4": "Find me a birthday gift for my sister.",
+  "output4": {
+    "intent_category": "gifting",
+    "confidence_score": 0.95,
+    "entities": { "recipient": "sister", "occasion": "birthday" },
+    "follow_up_questions": [
+      {
+        "question": "What is your budget for your sister's birthday gift?",
+        "field": "budget",
+        "required": true
+      },
+      {
+        "question": "When would you like the gift to be delivered?",
+        "field": "delivery_date",
+        "required": true
+      },
+      {
+        "question": "Where should the gift be delivered to?",
+        "field": "delivery_location",
+        "required": true
+      },
+      {
+        "question": "Do you have a specific type of gift in mind?",
+        "field": "gift_type",
+        "options": [
+          "flowers",
+          "chocolates",
+          "gadgets",
+          "books",
+          "clothing",
+          "jewelry",
+          "perfumes",
+          "toys",
+          "gift_card",
+          "home_decor",
+          "personalized",
+          "experiences"
+        ],
+        "required": false
+      }
+    ]
+  },
+
+  "input5": "How can I update my Aadhar address online?",
+  "output5": {
+    "web_search_results": "Title: Online Address Update Process - Unique Identification Authority of ...\nSnippet: UIDAI is mandated to issue an easily verifiable 12 digit random number as Unique Identity - Aadhaar to all Residents of India.\nURL: https://uidai.gov.in/en/922-faqs/aadhaar-online-services/online-address-update-process.html\n\nTitle: How To Change Address In Aadhaar Card Online? - ClearTax\nSnippet: Learn how to update your Aadhaar card address online easily. Step-by-step guide, required documents, and FAQs included.\nURL: https://cleartax.in/s/aadhar-card-address-change-online\n\nTitle: How to Change Address in Aadhaar Card Online for Free?\nSnippet: Enter your Aadhaar number and authenticate your login using the OTP sent to your registered mobile number. Click on \"Update Address in Aadhaar.\" your updated address accurately in every field. Scan and upload a valid document that verifies your new address. Accepted documents include a passport, bank statement, voter ID, or utility bill.\nURL: https://www.gadgets360.com/how-to/features/how-to-change-address-in-aadhar-card-online-7285752\n\nTitle: How to Change/Update Address in Aadhaar Card Online in 2024\nSnippet: Facing challenges with Aadhaar card address change? Learn how to update your address hassle-free online, with step-by-step instructions, processing time, required documents, and more.\nURL: https://www.indmoney.com/blog/personal-finance/how-to-change-address-in-aadhaar-online\n"
+  },
+
+  "input6": "Book train tickets for 3 people from Boston to Washington on June 1st.",
+  "output6": {
+    "intent_category": "travel",
+    "confidence_score": 0.95,
+    "entities": {
+      "source_location": "Boston",
+      "destination_location": "Washington",
+      "travel_date": "2025-06-01",
+      "mode_of_transport": "train",
+      "number_of_travelers": 3
+    },
+    "follow_up_questions": [
+      {
+        "question": "What is your estimated budget for this trip?",
+        "field": "budget",
+        "required": true
+      },
+      {
+        "question": "Will you be returning from Washington? If so, on what date?",
+        "field": "return_date",
+        "required": false
+      }
+    ]
+  },
+
+  "input7": "Get me a cab from downtown to airport at 9 am under $30.",
+  "output7": {
+    "intent_category": "cab booking",
+    "confidence_score": 0.95,
+    "entities": {
+      "pickup_location": "downtown",
+      "dropoff_location": "airport",
+      "pickup_time": "09:00:00",
+      "price_range": 30
+    },
+    "follow_up_questions": [
+      {
+        "question": "What date would you like to book the cab for?",
+        "field": "pickup_date",
+        "required": true
+      },
+      {
+        "question": "How many passengers will be traveling?",
+        "field": "number_of_passengers",
+        "required": true
+      },
+      {
+        "question": "Do you have a preference for the type of cab?",
+        "field": "cab_type",
+        "options": [
+          "standard",
+          "suv",
+          "luxury",
+          "mini",
+          "sedan",
+          "electric",
+          "shared"
+        ],
+        "required": false
+      }
+    ]
+  },
+
+  "input8": "I want to plan a surprise party next weekend.",
+  "output8": {
+    "web_search_results": "Title: How To Plan a Surprise Party (With a Free Checklist)\nSnippet: Here are 10 popular themes for a surprise party:. Retro/Vintage Party: Take a trip down memory lane with a theme from the guest of honor's favorite decade. Hollywood Glam: Roll out the red carpet and make everyone feel like a star with a Hollywood-themed party. Hawaiian Luau: Bring the island vibes with bright decorations, tropical drinks, and a fun tiki bar.\nURL: https://www.prettymyparty.com/how-to-plan-a-surprise-party/\n\nTitle: How to Host a Surprise Party Without Stress\nSnippet: This keeps all communication in one place and reduces the risk of the surprise being spoiled. Planning Timeline. Start your surprise party planning early to avoid last-minute stress. Follow this timeline: 4-6 weeks before: Choose a date and venue; Create your guest list; Send out invitations (emphasize the need for discretion) 2-3 weeks before:\nURL: https://party.pro/surprise-party/\n\nTitle: Surprise Party Checklist - Easy Event Planning\nSnippet: You need a Surprise Party Checklist! After all, the last thing you want is to start planning a surprise party, and forget to tell your friends that the guest of honor doesn't know there's an event coming up! No need to panic, though! Easy Event Planning has sorted all the tasks you'll want to have done before the day of the event ...\nURL: https://easyeventplanning.com/blog/surprise-party-checklist\n\nTitle: 20+ Surprisingly Easy Surprise Game Ideas - Play Party Plan\nSnippet: Obviously the toughest thing about hosting a surprise party is keeping it a surprise! If the surprise gets ruined, it's no longer a surprise party - it's just a party! Here are a few tips to help you plan and host a surprise party without ruining the surprise! Choose a Co-Host\nURL: https://www.playpartyplan.com/surprise-party-ideas/\n"
+  },
+
+  "input9": "can you book train tickets for me from Delhi to Shimla on next weekend?",
+  "output9": {
+    "intent_category": "travel",
+    "confidence_score": 0.95,
+    "entities": {
+      "source_location": "Delhi",
+      "destination_location": "Shimla",
+      "travel_date": "2025-06-01",
+      "mode_of_transport": "train"
+    },
+    "follow_up_questions": [
+      {
+        "question": "How many people will be traveling?",
+        "field": "number_of_travelers",
+        "required": true
+      },
+      {
+        "question": "Do you have a specific budget for this trip?",
+        "field": "budget",
+        "required": false
+      },
+      {
+        "question": "When do you plan to return from Shimla?",
+        "field": "return_date",
+        "required": false
+      }
+    ]
+  }
+}

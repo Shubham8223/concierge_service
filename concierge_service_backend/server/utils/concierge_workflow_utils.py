@@ -13,7 +13,8 @@ def create_dynamic_schema_for_entities_with_follow_up_questions(intent_category:
 
     return EntityFollowUpQuestionsSchema, field_descriptions
 
-def get_schema_from_state(state):
+def get_schema_from_state(*args, **kwargs):
+    state = args[0] 
     intent_category = state["intent_category"]
     schema_class, field_descriptions = create_dynamic_schema_for_entities_with_follow_up_questions(intent_category)
     return {"schema_class":schema_class,"field_descriptions":field_descriptions}

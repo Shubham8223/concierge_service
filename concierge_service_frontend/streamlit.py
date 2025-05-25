@@ -7,9 +7,10 @@ load_dotenv()
 
 st.title("Concierge Service")
 
-user_input = st.text_area("Enter your request", "Need a sunset-view table for two tonight; gluten-free menu a must")
+user_input = st.text_area("Enter your request", "")
+is_input_valid = user_input.strip() != ""
 
-if st.button("Submit"):
+if st.button("Submit",disabled=not is_input_valid):
     if user_input.strip() == "":
         st.warning("Please enter a request before submitting.")
     else:

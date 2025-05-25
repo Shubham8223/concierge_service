@@ -1,9 +1,6 @@
 from langchain_core.messages import ToolMessage
 from server.agents.states.concierge_workflow_state import AgentState
-from server.decorators.inject_tool_mapper import inject_tool_mapping
-from server.agents.tools.web_search_tool import duckduckgo_search
 
-@inject_tool_mapping([duckduckgo_search])
 async def web_searcher(state: AgentState, tools: dict) -> dict:
     input = state["input"]
     try:

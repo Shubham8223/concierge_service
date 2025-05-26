@@ -240,5 +240,38 @@
         "required": false
       }
     ]
+  },
+
+  "input10": "can you book train tickets for me from Delhi to Shimla on next weekend also i want to book a restaurant in shimla post that?",
+  "output10": {
+    "intent_category": "travel",
+    "confidence_score": 0.8,
+    "entities": {
+      "source_location": "Delhi",
+      "destination_location": "Shimla",
+      "mode_of_transport": "train"
+    },
+    "follow_up_questions": [
+      {
+        "question": "When exactly next weekend do you want to travel? Saturday (May 31, 2025) or Sunday (June 1, 2025)?",
+        "field": "travel_date",
+        "required": true
+      },
+      {
+        "question": "When do you plan to return from Shimla?",
+        "field": "return_date",
+        "required": true
+      },
+      {
+        "question": "How many people will be traveling?",
+        "field": "number_of_travelers",
+        "required": true
+      },
+      {
+        "question": "What is your budget for this trip?",
+        "field": "budget",
+        "required": false
+      }
+    ]
   }
 }

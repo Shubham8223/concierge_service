@@ -9,18 +9,19 @@ class DuckDuckGoSearchInput(BaseModel):
         int, Field(description="Maximum number of results to return", ge=1, le=10)
     ] = 5
 
-    def process_response(self, results: list) -> str:
+    def process_response(self, results: list) -> list[dict]:
         if not results:
-            return "No results found."
+            return []
 
-        formatted_results = []
+        processed_results = []
         for item in results[:self.max_results]:
-            title = item.get("title", "No title")
-            snippet = item.get("snippet", "No snippet available")
-            link = item.get("link", "No URL available")
-            formatted_results.append(f"Title: {title}\nSnippet: {snippet}\nURL: {link}\n")
+            processed_results.append({
+                "title": item.get("title", "No title"),
+                "snippet": item.get("snippet", "No snippet available"),
+                "url": item.get("link", "No URL available")
+            })
 
-        return "\n".join(formatted_results)
+        return processed_results
 
 @tool("duckduckgo_search")
 def duckduckgo_search(search_input: DuckDuckGoSearchInput) -> str:
@@ -31,7 +32,10 @@ def duckduckgo_search(search_input: DuckDuckGoSearchInput) -> str:
     - search_input: A structured input containing the search query string and maximum results to return.
 
     Returns:
-    - A formatted string with the titles, snippets, and URLs of the search results, or a message indicating no results were found.
+    - list of dict: A list containing up to max_results dictionaries
+           - 'title': Title of the search result or 'No title' if missing.
+           - 'snippet': Snippet or summary of the result or 'No snippet available' if missing.
+           - 'url': URL of the result or 'No URL available' if missing.
     """
     search = DuckDuckGoSearchResults(output_format="list",max_results=search_input.max_results)
     try:

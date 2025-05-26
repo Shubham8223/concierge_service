@@ -142,7 +142,28 @@
 
   "input5": "How can I update my Aadhar address online?",
   "output5": {
-    "web_search_results": "Title: Online Address Update Process - Unique Identification Authority of ...\nSnippet: UIDAI is mandated to issue an easily verifiable 12 digit random number as Unique Identity - Aadhaar to all Residents of India.\nURL: https://uidai.gov.in/en/922-faqs/aadhaar-online-services/online-address-update-process.html\n\nTitle: How To Change Address In Aadhaar Card Online? - ClearTax\nSnippet: Learn how to update your Aadhaar card address online easily. Step-by-step guide, required documents, and FAQs included.\nURL: https://cleartax.in/s/aadhar-card-address-change-online\n\nTitle: How to Change Address in Aadhaar Card Online for Free?\nSnippet: Enter your Aadhaar number and authenticate your login using the OTP sent to your registered mobile number. Click on \"Update Address in Aadhaar.\" your updated address accurately in every field. Scan and upload a valid document that verifies your new address. Accepted documents include a passport, bank statement, voter ID, or utility bill.\nURL: https://www.gadgets360.com/how-to/features/how-to-change-address-in-aadhar-card-online-7285752\n\nTitle: How to Change/Update Address in Aadhaar Card Online in 2024\nSnippet: Facing challenges with Aadhaar card address change? Learn how to update your address hassle-free online, with step-by-step instructions, processing time, required documents, and more.\nURL: https://www.indmoney.com/blog/personal-finance/how-to-change-address-in-aadhaar-online\n"
+    "web_search_results": [
+      {
+        "title": "Online Address Update Process - Unique Identification Authority of ...",
+        "snippet": "I successfully submitted my address update request. How can I track this? keyboard_arrow_down On successful submission of an online address update request, a SRN (Service Request Number) is generated, which is shown on screen and also sent via SMS to your registered mobile number.",
+        "url": "https://uidai.gov.in/en/922-faqs/aadhaar-online-services/online-address-update-process.html"
+      },
+      {
+        "title": "How To Change Address In Aadhaar Card Online? - ClearTax",
+        "snippet": "Given below is the online address update process for your Aadhar card: Step 1: Login to myAadhaar portal by entering your Aadhaar number, captcha code and OTP. Step 2: After logging in, select the option 'Address Update' tab. Step 3: On the next tab, click on 'Update Aadhaar Online' tab.",
+        "url": "https://cleartax.in/s/aadhar-card-address-change-online"
+      },
+      {
+        "title": "Aadhar Card Update Online: Mobile, Address, DOB, Name Correction",
+        "snippet": "How to Update Aadhar Card Online. You can also update your Aadhar card from your mobile phone easily. Follow these steps to Update your Aadhar Card Online. Visit the website myaadhaar.uidai.gov.in; Here you will find the Login Option; Click on the Login and Enter your Aadhar Number and OTP (received on the registered mobile number)",
+        "url": "https://uidai-aadharcard.com/aadhar-card-update/"
+      },
+      {
+        "title": "How to Change Address in Aadhaar Card Online for Free?",
+        "snippet": "How To Download the Aadhaar Card After Address Change? Once your address update is approved, you can download the updated Aadhaar card in a few simple steps: Visit the UIDAI e-Aadhaar Portal and head to the Download Aadhaar page. Enter your Aadhaar number, VID, or Enrolment ID. Enter the OTP sent to your registered mobile number for verification.",
+        "url": "https://www.gadgets360.com/how-to/features/how-to-change-address-in-aadhar-card-online-7285752"
+      }
+    ]
   },
 
   "input6": "Book train tickets for 3 people from Boston to Washington on June 1st.",
@@ -210,7 +231,28 @@
 
   "input8": "I want to plan a surprise party next weekend.",
   "output8": {
-    "web_search_results": "Title: How To Plan a Surprise Party (With a Free Checklist)\nSnippet: Here are 10 popular themes for a surprise party:. Retro/Vintage Party: Take a trip down memory lane with a theme from the guest of honor's favorite decade. Hollywood Glam: Roll out the red carpet and make everyone feel like a star with a Hollywood-themed party. Hawaiian Luau: Bring the island vibes with bright decorations, tropical drinks, and a fun tiki bar.\nURL: https://www.prettymyparty.com/how-to-plan-a-surprise-party/\n\nTitle: How to Host a Surprise Party Without Stress\nSnippet: This keeps all communication in one place and reduces the risk of the surprise being spoiled. Planning Timeline. Start your surprise party planning early to avoid last-minute stress. Follow this timeline: 4-6 weeks before: Choose a date and venue; Create your guest list; Send out invitations (emphasize the need for discretion) 2-3 weeks before:\nURL: https://party.pro/surprise-party/\n\nTitle: Surprise Party Checklist - Easy Event Planning\nSnippet: You need a Surprise Party Checklist! After all, the last thing you want is to start planning a surprise party, and forget to tell your friends that the guest of honor doesn't know there's an event coming up! No need to panic, though! Easy Event Planning has sorted all the tasks you'll want to have done before the day of the event ...\nURL: https://easyeventplanning.com/blog/surprise-party-checklist\n\nTitle: 20+ Surprisingly Easy Surprise Game Ideas - Play Party Plan\nSnippet: Obviously the toughest thing about hosting a surprise party is keeping it a surprise! If the surprise gets ruined, it's no longer a surprise party - it's just a party! Here are a few tips to help you plan and host a surprise party without ruining the surprise! Choose a Co-Host\nURL: https://www.playpartyplan.com/surprise-party-ideas/\n"
+    "web_search_results": [
+      {
+        "title": "How To Plan a Surprise Party (With a Free Checklist)",
+        "snippet": "Surprise parties can be a fun and exciting way to celebrate a loved one. Check out our step-by-step guide and free party to help you plan the perfect surprise party.",
+        "url": "https://www.prettymyparty.com/how-to-plan-a-surprise-party/"
+      },
+      {
+        "title": "How to Plan the Ultimate Surprise Party - Mrs. Fields®",
+        "snippet": "Learn how to plan a surprise party with our comprehensive guide. Explore ideas for themes, food, and more to make your surprise party extra memorable.",
+        "url": "https://www.mrsfields.com/blogs/blog/surprise-party"
+      },
+      {
+        "title": "How to Successfully Plan a Surprise Party Without Giving It Away",
+        "snippet": "Planning a surprise party can be one of the most exciting yet challenging tasks. The thrill of keeping the event a secret while ensuring everything goes smoothly is crucial to making the celebration memorable. In this article, we will explore effective strategies for planning a surprise party without spoiling the fun.",
+        "url": "https://www.myfuncards.com/party-planning/successfully-plan-surprise-party-without-giving-away/"
+      },
+      {
+        "title": "How to Plan a Surprise Party That Truly Surprises | VenueNow",
+        "snippet": "However, planning a surprise party can be quite tricky and requires careful consideration to ensure that the element of surprise is not ruined. In this guide, we will discuss all the necessary steps to plan a successful surprise party that truly surprises your loved one.",
+        "url": "https://venuenow.com/blog/how-to-plan-a-surprise-party-that-truly-surprises/"
+      }
+    ]
   },
 
   "input9": "can you book train tickets for me from Delhi to Shimla on next weekend?",

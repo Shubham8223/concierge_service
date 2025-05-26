@@ -51,7 +51,7 @@ A full-stack concierge service application with FastAPI backend and Streamlit fr
 2. **Start the Frontend** (in a new terminal):
    ```bash
    cd concierge_service_frontend
-   poetry run streamlit run app.py
+   poetry run streamlit run streamlit.py
    ```
 
 ## Configuration

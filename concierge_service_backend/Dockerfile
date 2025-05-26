@@ -16,6 +16,6 @@ RUN poetry config virtualenvs.create false && \
 
 COPY . .
 
-EXPOSE 9090
+EXPOSE 8080
 
 CMD ["uvicorn", "server.main:app", "--reload", "--host", "0.0.0.0", "--port", "8080"]

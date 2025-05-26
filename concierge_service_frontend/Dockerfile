@@ -16,6 +16,6 @@ RUN poetry config virtualenvs.create false && \
 
 COPY . .
 
-EXPOSE 9090
+EXPOSE 8501
 
-CMD ["streamlit", "run", "streamlit.py", "--server.port", "5173"]
+CMD ["streamlit", "run", "streamlit.py"]

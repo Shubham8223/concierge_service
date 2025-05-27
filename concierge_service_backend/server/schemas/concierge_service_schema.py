@@ -43,7 +43,7 @@ class TravelEntitiesSchema(BaseModel):
     travel_date: Optional[dt_date] = Field(None,description="Date of travel")
     return_date: Optional[dt_date] = Field(None,description="Date of return (if any)")
     mode_of_transport: Optional[concierge_service_enum.ModeOfTransportEnum] = Field(None,description="Preferred mode of transport")
-    number_of_travelers: Optional[int] = Field(None,description="Number of travelers")
+    number_of_travelers: Optional[int] = Field(None,gt=0,description="Number of travelers")
     budget: Optional[float] = Field(None,gt=0, description="Estimated travel budget (must be > 0)")
     @model_validator(mode="after")
     @classmethod
@@ -90,7 +90,7 @@ class CabBookingEntitiesSchema(BaseModel):
     dropoff_location: Optional[str] = Field(None,description="Location where the cab should drop off")
     pickup_date: Optional[dt_date] = Field(None,description="Desired date of pickup")
     pickup_time: Optional[dt_time] = Field(None,description="Desired time of pickup")
-    number_of_passengers: Optional[int] = Field(None,description="Number of passengers for the ride")
+    number_of_passengers: Optional[int] = Field(None,gt=0, description="Number of passengers for the ride")
     cab_type: Optional[concierge_service_enum.CabTypeEnum] = Field(None,description="Type of cab preferred (e.g. sedan, SUV)")
     price_range: Optional[float] = Field(None,gt=0, description="Estimated price range for the ride (must be > 0)")
     @model_validator(mode="after")
